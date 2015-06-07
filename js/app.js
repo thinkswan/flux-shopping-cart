@@ -6,7 +6,8 @@ var FluxCartApp = require('./components/FluxCartApp.react');
 // Load mock product data into local storage
 ProductData.init();
 
-// Load mock API call
+// Use mock API to fetch mock data from local storage and load it into the
+// `ProductStore`
 CartAPI.getProductData();
 
 // Render FluxCartApp view
