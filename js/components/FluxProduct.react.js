@@ -6,6 +6,8 @@ var FluxProduct = React.createClass({
 
   // Add item to cart
   addToCart: function(event) {
+    console.log('[FluxProduct.react] Adding item to cart');
+
     var sku = this.props.selected.sku;
     var update = {
       name: this.props.product.name,
@@ -18,12 +20,16 @@ var FluxProduct = React.createClass({
   },
 
   // Select product variant
-  selectVariant: function(event){
+  selectVariant: function(event) {
+    console.log('[FluxProduct.react] Selecting product variant');
+
     FluxCartActions.selectProduct(event.target.value);
   },
 
   // Render product view
   render: function() {
+    console.log('[FluxProduct.react] Rendering view');
+
     var numAvailable = (this.props.selected.sku in this.props.cartItems) ?
       this.props.selected.inventory - this.props.cartItems[this.props.selected.sku].quantity :
       this.props.selected.inventory;

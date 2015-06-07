@@ -6,21 +6,29 @@ var FluxCart = React.createClass({
 
   // Hide cart
   closeCart: function() {
+    console.log('[FluxCart.react] Closing cart');
+
     FluxCartActions.updateCartVisible(false);
   },
 
   // Show cart
   openCart: function() {
+    console.log('[FluxCart.react] Opening cart');
+
     FluxCartActions.updateCartVisible(true);
   },
 
   // Remove item from cart
   removeFromCart: function(sku) {
+    console.log('[FluxCart.react] Removing item from cart');
+
     FluxCartActions.removeFromCart(sku);
   },
 
   // Render cart view
   render: function() {
+    console.log('[FluxCart.react] Rendering view');
+
     var self = this;
     var products = this.props.products;
 

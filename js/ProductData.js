@@ -1,6 +1,8 @@
 var ProductData = {
 
   init: function() {
+    console.log('[ProductData] Loading mock data into local storage');
+
     localStorage.clear();
     localStorage.setItem('product', JSON.stringify([
       {

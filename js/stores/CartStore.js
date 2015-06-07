@@ -55,6 +55,8 @@ var CartStore = _.extend({}, EventEmitter.prototype, {
 
   // Emit change event
   emitChange: function() {
+    console.log('[CartStore] Emitting change event');
+
     this.emit('change');
   },
 
@@ -77,14 +79,17 @@ AppDispatcher.register(function(payload) {
 
   switch(action.actionType) {
     case FluxCartConstants.CART_ADD:
+      console.log('[CartStore] Received CART_ADD action', action.sku, action.update);
       add(action.sku, action.update);
       break;
 
     case FluxCartConstants.CART_VISIBLE:
+      console.log('[CartStore] Received CART_VISIBLE action', action.cartVisible);
       setCartVisible(action.cartVisible);
       break;
 
     case FluxCartConstants.CART_REMOVE:
+      console.log('[CartStore] Received CART_REMOVE action', action.sku);
       removeItem(action.sku);
       break;
 

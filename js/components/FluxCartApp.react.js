@@ -48,6 +48,8 @@ var FluxCartApp = React.createClass({
 
   // Update state when stores emit `change` event
   _onChange: function() {
+    console.log('[FluxCartApp.react] Received change event from a store, updating state');
+
     this.setState(getCartState());
   }
 

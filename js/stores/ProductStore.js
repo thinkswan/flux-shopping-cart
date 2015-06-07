@@ -33,6 +33,8 @@ var ProductStore = _.extend({}, EventEmitter.prototype, {
 
   // Emit change event
   emitChange: function() {
+    console.log('[ProductStore] Emitting change event');
+
     this.emit('change');
   },
 
@@ -55,10 +57,12 @@ AppDispatcher.register(function(payload) {
 
   switch(action.actionType) {
     case FluxCartConstants.RECEIVE_DATA:
+      console.log('[ProductStore] Received RECEIVE_DATA action', action.data);
       loadProductData(action.data);
       break;
 
     case FluxCartConstants.SELECT_PRODUCT:
+      console.log('[ProductStore] Received SELECT_PRODUCT action', action.data);
       setSelected(action.data);
       break;
 
