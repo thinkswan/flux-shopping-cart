@@ -1,0 +1,17 @@
+{
+  "name": "flux-shopping-cart",
+  "description": "A Flux app that allows users to manage a shopping cart",
+  "keywords": [
+    "node",
+    "express",
+    "flux",
+    "react",
+    "underscore",
+    "e-commerce"
+  ],
+  "repository": "https://github.com/thinkswan/flux-shopping-cart",
+  "success_url": "/",
+  "scripts": {},
+  "env": {},
+  "addons": []
+}
