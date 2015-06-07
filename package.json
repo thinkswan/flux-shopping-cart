@@ -4,14 +4,14 @@
   "description": "A Flux app that allows users to manage a shopping cart",
   "author": "Graham Swan <thinkswan@gmail.com> (http://grahamswan.com/)",
   "scripts": {
-    "browserify": "browserify app.js | uglifyjs -cm > public/js/app.js",
+    "browserify": "browserify js/app.js | uglifyjs -cm > public/js/app.js",
     "build": "npm run browserify ",
-    "watch": "watchify app.js -o public/js/app.js -v",
+    "watch": "watchify js/app.js -o public/js/app.js -v",
     "postinstall": "npm run build",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "app.js",
+  "main": "js/app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thinkswan/flux-shopping-cart.git"
