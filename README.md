@@ -5,10 +5,6 @@ A Flux app that allows users to manage a shopping cart.
 Based on the tutorial found at
 https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux.
 
-## Demo
-
-View a live demo at https://flux-shopping-cart.herokuapp.com/.
-
 ## How to use
 
 ```
