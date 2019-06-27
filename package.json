@@ -2,7 +2,7 @@
   "name": "flux-shopping-cart",
   "version": "0.0.0",
   "description": "A Flux app that allows users to manage a shopping cart",
-  "author": "Graham Swan <thinkswan@gmail.com> (http://grahamswan.com/)",
+  "author": "Graham Swan <thinkswan@gmail.com>",
   "scripts": {
     "browserify": "browserify js/app.js | uglifyjs -cm > public/js/app.js",
     "build": "npm run browserify ",
@@ -16,9 +16,7 @@
     "type": "git",
     "url": "https://github.com/thinkswan/flux-shopping-cart.git"
   },
-   "bugs": {
-    "url": "https://github.com/thinkswan/flux-shopping-cart/issues"
-  },
+  "bugs": {},
   "keywords": [
     "node",
     "express",
